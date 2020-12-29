@@ -1,0 +1,77 @@
+*create incidents 
+	problems
+	changes
+		all have sla's
+			define sla
+			defins esclation plans
+				user and role assignments()
+
+------------
+database design	:
+
+	user
+------------------
+
+userid 
+firstname
+lastname
+email
+ 
+roles:
+------
+role id
+role
+
+user roles
+---------------
+id 
+userid 
+roleid
+
+
+service groups
+---------------
+id
+group name
+group owner
+watch members
+email group
+
+service group members
+--------------
+id
+group id
+member id
+
+
+configurationitem
+---------------
+id 
+item name
+description
+assigned groups
+
+incidents
+---------------
+id
+short description
+description
+configuration item
+severity
+priority
+notes
+status (new /open /in progresss /closed)
+requested by
+assigned to
+
+sla_rules
+-------------
+severity 
+priority
+days to breach
+
+
+problems
+changes
+escations_plan
+

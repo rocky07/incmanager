@@ -1,0 +1,8 @@
+/home/rocky/dev/workspace/incmanager/src/main/java/com/forsfortis/incmanager/SecurityConfiguration.java
+/home/rocky/dev/workspace/incmanager/src/main/java/com/forsfortis/incmanager/MyUserDetailsService.java
+/home/rocky/dev/workspace/incmanager/src/main/java/com/forsfortis/incmanager/model/User.java
+/home/rocky/dev/workspace/incmanager/src/main/java/com/forsfortis/incmanager/model/UserRole.java
+/home/rocky/dev/workspace/incmanager/src/main/java/com/forsfortis/incmanager/repository/UserRepository.java
+/home/rocky/dev/workspace/incmanager/src/main/java/com/forsfortis/incmanager/security/MyUserDetail.java
+/home/rocky/dev/workspace/incmanager/src/main/java/com/forsfortis/incmanager/controller/MainController.java
+/home/rocky/dev/workspace/incmanager/src/main/java/com/forsfortis/incmanager/IncmanagerApplication.java

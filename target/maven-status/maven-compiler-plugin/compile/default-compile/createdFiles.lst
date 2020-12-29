@@ -1,0 +1,8 @@
+com/forsfortis/incmanager/MyUserDetailsService.class
+com/forsfortis/incmanager/security/MyUserDetail.class
+com/forsfortis/incmanager/repository/UserRepository.class
+com/forsfortis/incmanager/IncmanagerApplication.class
+com/forsfortis/incmanager/SecurityConfiguration.class
+com/forsfortis/incmanager/controller/MainController.class
+com/forsfortis/incmanager/model/User.class
+com/forsfortis/incmanager/model/UserRole.class

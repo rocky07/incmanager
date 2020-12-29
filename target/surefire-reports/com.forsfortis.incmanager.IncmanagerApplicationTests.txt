@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.forsfortis.incmanager.IncmanagerApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.797 s - in com.forsfortis.incmanager.IncmanagerApplicationTests
