@@ -1,10 +1,9 @@
 package com.forsfortis.incmanager.security;
 
-import java.util.Arrays;
 import java.util.Collection;
+import java.util.stream.Collectors;
 
 import com.forsfortis.incmanager.model.User;
-import com.forsfortis.incmanager.model.UserRole;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -28,11 +27,15 @@ public class MyUserDetail implements UserDetails {
     }
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        // TODO Auto-generated method stub
-       /* user.getRole().stream().map(
-            UserRole::getRole() 
-        ).collect();*/
-        return Arrays.asList(new SimpleGrantedAuthority("USER"));
+    
+       return user.getRole().stream()
+        .map(role->{
+            System.out.println(role.getRole());
+            return new SimpleGrantedAuthority(role.getRole());
+        })
+        .collect(Collectors.toList());
+
+        //return Arrays.asList(new SimpleGrantedAuthority("USER"));
     }
 
     @Override

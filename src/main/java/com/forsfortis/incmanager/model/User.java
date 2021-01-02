@@ -2,10 +2,13 @@ package com.forsfortis.incmanager.model;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
@@ -20,18 +23,19 @@ public class User {
     private String email;
     private String password;
     private boolean active_status;
-    @OneToMany
+
+    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @JoinColumn(name="userid",referencedColumnName = "id")
     private List<UserRole> role;
 
     public User(){
-
     }
     
     public int getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(final int id) {
         this.id = id;
     }
 
@@ -39,7 +43,7 @@ public class User {
         return first_name;
     }
 
-    public void setFirst_name(String first_name) {
+    public void setFirst_name(final String first_name) {
         this.first_name = first_name;
     }
 
@@ -47,7 +51,7 @@ public class User {
         return last_name;
     }
 
-    public void setLast_name(String last_name) {
+    public void setLast_name(final String last_name) {
         this.last_name = last_name;
     }
 
@@ -55,7 +59,7 @@ public class User {
         return email;
     }
 
-    public void setEmail(String email) {
+    public void setEmail(final String email) {
         this.email = email;
     }
 
@@ -63,7 +67,7 @@ public class User {
         return active_status;
     }
 
-    public void setActive_status(boolean active_status) {
+    public void setActive_status(final boolean active_status) {
         this.active_status = active_status;
     }
 
@@ -71,7 +75,7 @@ public class User {
         return password;
     }
 
-    public void setPassword(String password) {
+    public void setPassword(final String password) {
         this.password = password;
     }
 
@@ -79,7 +83,7 @@ public class User {
         return role;
     }
 
-    public void setRole(List<UserRole> role) {
+    public void setRole(final List<UserRole> role) {
         this.role = role;
     }
     
