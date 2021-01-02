@@ -9,18 +9,19 @@ public class MainController {
 
     @GetMapping("/")
     public String homePage(final Model model) {
-        model.addAttribute("appName", "appName");
+       // model.addAttribute("appName", "appName");
         return "index";
     }
-    
-    @GetMapping("/user")
-    public String user(){
-        return "welcome user : ";
+
+    @GetMapping("/error")
+    public String errorPage(final Model model) {
+        model.addAttribute("appName", "appName");
+        return "error";
     }
 
     @GetMapping("/admin")
     public String getAdmin(){
-        return "welcome admin ";
+        return "admin";
     }
 
 }
